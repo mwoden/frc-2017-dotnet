@@ -13,9 +13,6 @@ namespace Robot.Commands.GearManipulator
               : base(new CloseGearManipulator(), new OpenGearManipulator())
         { }
 
-        protected override bool Condition()
-        {
-            return Robot.GearManipulator.IsOpen;
-        }
+        protected override bool Condition() => Robot.GearManipulator.IsOpen;
     }
 }
