@@ -9,7 +9,7 @@ namespace Robot.Subsystems
 {
     public sealed class Climber : Subsystem
     {
-        private readonly PWMSpeedController motor = new VictorSP(RobotMap.Pwm.Climber)
+        private readonly PWMSpeedController motor = new VictorSP(RobotMap.Pwm.Climber);
 
         public Climber() { motor.Inverted = true; }
 
